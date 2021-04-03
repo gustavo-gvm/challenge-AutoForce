@@ -1,0 +1,145 @@
+nav {
+  height: 4rem;
+  width: 100%;
+  background: #18131F;
+  padding: 0 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuIcon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.title {
+  width: 9.38rem;
+  margin-left: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper-contact {
+  background: #FF1430;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-contact i {
+  font-size: 1.25rem;
+}
+
+.wrapper-contact:last-child {
+  background: #2FB640;
+}
+
+.wrapper-contact:last-child i {
+  font-size: 1.88rem;
+}
+
+.fiat {
+  width: 3.15rem;
+  margin-left: 10px;
+}
+
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.menu.open {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.institucional {
+  background-color: #FF1430;
+  color: #fff;
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+.arrow.down{
+  transform: rotate(-180deg);
+  transition: transform 0.2s linear;
+}
+
+.wrap__content {
+  background-color: #433B47;
+  padding-right: 20px;
+}
+
+.wrap__content ul {
+  list-style: none;
+}
+
+.institucional__option {
+  display: none;
+  transition: all 0.3s;
+}
+
+.institucional__option.open {
+  display: block;
+  transition: all 0.3s;
+}
+
+.institucional__option li {
+  display: flex;
+  padding: 15px 0;
+  margin-left: 45px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  border-bottom: 1px solid #726C75;
+}
+
+.menu__option li{
+  display: flex;
+  padding: 15px 0;
+  margin-left: 20px;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #EDEDE3;
+
+  border-bottom: 1px solid #726C75;
+}
+
+.badgeNew::after {
+  content: 'Novo';
+  background: #FF1430;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px;
+  border-radius: 6px;
+  align-items: center;
+  margin-left: 15px;
+}
